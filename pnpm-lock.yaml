@@ -2,10 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   cheerio: 1.0.0-rc.12
+  playwright: ^1.29.1
   standard: ^17.0.0
 
 dependencies:
   cheerio: 1.0.0-rc.12
+  playwright: 1.29.1
 
 devDependencies:
   standard: 17.0.0
@@ -1297,6 +1299,21 @@ packages:
       find-up: 3.0.0
       load-json-file: 5.3.0
     dev: true
+
+  /playwright-core/1.29.1:
+    resolution: {integrity: sha512-20Ai3d+lMkWpI9YZYlxk8gxatfgax5STW8GaMozAHwigLiyiKQrdkt7gaoT9UQR8FIVDg6qVXs9IoZUQrDjIIg==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: false
+
+  /playwright/1.29.1:
+    resolution: {integrity: sha512-lasC+pMqsQ2uWhNurt3YK3xo0gWlMjslYUylKbHcqF/NTjwp9KStRGO7S6wwz2f52GcSnop8XUK/GymJjdzrxw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      playwright-core: 1.29.1
+    dev: false
 
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
